@@ -1,6 +1,10 @@
 import React from 'react';
 import LeafletMapComponent from './LeafletMapComponent';
 // import Categories from './Categories';
+import { FaBookOpen } from "react-icons/fa";
+import { MdOutlineContactSupport } from "react-icons/md";
+import { IoPerson } from "react-icons/io5";
+import { LuBrainCircuit } from "react-icons/lu";
 
 const MainLayout = () => {
   return (
@@ -18,13 +22,13 @@ const MainLayout = () => {
           <nav className='mb-8'>
             <ul className="flex justify-center space-x-4 cursor-pointer">
               <li>
-                <a href="#" className="text-white hover:text-gray-800 transition">Features</a>
+                <a href="#features" className="text-white hover:text-gray-800 transition">Features</a>
               </li>
               <li>
-                <a href="#cats" className="text-white hover:text-gray-800 transition">Courses</a>
+                <a href="#courses" className="text-white hover:text-gray-800 transition">Courses</a>
               </li>
               <li>
-                <a href="#address" className="text-white hover:text-gray-800 transition">We Offer</a>
+                <a href="#offer" className="text-white hover:text-gray-800 transition">We Offer</a>
               </li>
             </ul>
           </nav>
@@ -44,7 +48,7 @@ const MainLayout = () => {
           />
           <h3 className="text-xl text-gray-100 font-semibold mt-2">Dr. S Gajalakshmi</h3>
           <p className="text-sm text-gray-100 ">Founder & Director</p>
-          <p className='flex justify-center text-sm animate-color-change-phone'><img src="/callicon.png" alt="" className='h-4 mr-1 w-4' /><a href='tel:+919047366444' className='mr-1'>+91 9047366444 </a> | <a href='tel:+917604885943' className='ml-1'>+91 7604885943</a></p>
+          <p className='flex justify-center text-sm animate-color-change-phone'><img src="/callicon.png" alt="" className='h-6 mr-1 w-6' /><a href='tel:+919047366444' className='mr-1 mt-[1px]'>+91 9047366444 </a> <span className='mt-[1.5px]'>|</span> <a href='tel:+917604885943' className='ml-1 mt-[1px]'>+91 7604885943</a></p>
         </div>
 
         {/* Quote/Description */}
@@ -71,7 +75,7 @@ const MainLayout = () => {
             target='_blank'
             className="animate-color-change-cta-rev flex items-center justify-center bg-gray-200 py-2 rounded-full hover:bg-gray-300 transition">
                 <div className='w-1/3 flex'>
-                <img src="/website_icon.png" className="w-6 h-6 mr-2" />
+                <img src="/web_icon.png" className="w-6 h-6 mr-2" />
                 <span>Website</span>
                 </div>
           </a>
@@ -80,17 +84,47 @@ const MainLayout = () => {
             href="mailto:avivaorganicstores@gmail.com"
             className="animate-color-change-cta flex items-center justify-center bg-gray-200 py-2 rounded-full hover:bg-gray-300 transition">
             <div className='w-1/3 flex'>
-                <img src="/mail_icon.png" className="w-6 h-6 mr-2" />
+                <img src="/mail_icon.webp" className="w-6 h-6 mr-2" />
                 <span>Mail Us</span>
                 </div>
           </a>
         </div>
 
-        <div id='cats'>
-        {/* <Categories/> */}
-        </div>
-        
+        {/* Features */}
+        <div id='features'>
+            <h1 className='text-xl font-semibold mt-8 text-white mb-4'>Features</h1>
 
+            <div className=''>
+                <div className="flex">
+                    <div className='w-1/2'>
+                        <div className='p-4 rounded-full mx-auto bg-[#0096FF] w-max text-white flex justify-center'><FaBookOpen className='text-3xl' /></div>
+                        <h1 className='text-sm text-center font-semibold mt-2 flex justify-center mb-4'>Best Curriculum</h1>
+                    </div>
+
+                    <div className='w-1/2'>
+                        <div className='p-4 rounded-full mx-auto bg-[#0096FF] w-max text-white'><IoPerson className='text-3xl'/></div>
+                        <h1 className='text-sm text-center font-semibold mt-2 flex justify-center mb-4'>Online and Offline Classes</h1>
+                    </div>
+                </div>
+                
+                <div className="flex">
+                    <div className='w-1/2'>
+                        <div className='p-4 rounded-full mx-auto bg-[#0096FF] w-max text-white'><LuBrainCircuit className='text-3xl'/></div>
+                        <h1 className='text-sm text-center font-semibold mt-2 flex justify-center mb-4'>Personalized Course Offerings</h1>
+                    </div>
+
+                    <div className='w-1/2'>
+                        <div className='p-4 rounded-full mx-auto bg-[#0096FF] w-max text-white'><MdOutlineContactSupport className='text-3xl' /></div>
+                        <h1 className='text-sm text-center font-semibold mt-2 flex justify-center mb-4'>1 to 1 Support</h1>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        
+        {/* Address */}
         <div id='address'>
             <h1 className='text-lg font-semibold mt-5 text-gray-200'>Visit Us</h1>
             <LeafletMapComponent/>
