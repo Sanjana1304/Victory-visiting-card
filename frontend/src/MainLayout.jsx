@@ -5,6 +5,7 @@ import { FaBookOpen } from "react-icons/fa";
 import { MdOutlineContactSupport } from "react-icons/md";
 import { IoPerson } from "react-icons/io5";
 import { LuBrainCircuit } from "react-icons/lu";
+import Categories from './Categories';
 
 const MainLayout = () => {
   return (
@@ -41,9 +42,9 @@ const MainLayout = () => {
             <p className="text-[13px] text-gray-200">Beyond Boundaries! Discover Your Potential At Victory</p>
         
           <img
-            src="/aviva_logo.png"
+            src="/victory_logo.png"
             alt=""
-            className="mx-auto rounded-full w-24 h-24 border-3 border-gray-300"
+            className="mt-2 mx-auto rounded-full w-30 h-24"
           />
           <h3 className="text-xl text-gray-100 font-semibold mt-2">Dr. S Gajalakshmi</h3>
           <p className="text-sm text-gray-100 ">Founder & Director</p>
@@ -170,10 +171,16 @@ const MainLayout = () => {
             </div>
         </div>
 
+        {/* Courses */}
+        <div id='courses'>
+        <h1 className='flex text-xl md:text-4xl mt-7 mb-7 text-white justify-center font-bold'>Courses Offered</h1>
+            <Categories/>
+        </div>
+
         
         {/* Address */}
         <div id='address'>
-            <h1 className='text-lg font-semibold mt-5 text-gray-200'>Visit Us</h1>
+            <h1 className='text-2xl font-semibold mt-5 text-white'>Visit Us</h1>
             <LeafletMapComponent/>
             <p className='text-gray-200 mt-2 text-sm shadow p-2 bg-gray-800 rounded'>Address: 20/33,Ramakrishnapuram 3rd street, West Mambalam, Chennai, Tamil Nadu 600033</p>
 
