@@ -33,24 +33,24 @@ const MainLayout = () => {
 
         {/* Profile Section */}
        
-        <div className="text-center mt-4 border">
-            <h2 className="text-2xl text-white font-bold mt-2">VICTORY GROUP OF INSTITUTIONS</h2>
+        <div className="text-center mt-4 rounded-xl  py-4">
+            <h2 className="text-2xl text-white  font-bold mt-2">VICTORY GROUP OF INSTITUTIONS</h2>
             <p className="text-[13px] text-gray-200">Beyond Boundaries! Discover Your Potential At Victory</p>
         
           <img
             src="/aviva_logo.png"
-            alt="Aviva Organics"
+            alt=""
             className="mx-auto rounded-full w-24 h-24 border-3 border-gray-300"
           />
           <h3 className="text-xl text-gray-100 font-semibold mt-2">Dr. S Gajalakshmi</h3>
-          <p className="text-sm text-gray-200">Founder & Director</p>
+          <p className="text-sm text-gray-100 ">Founder & Director</p>
           <p className='flex justify-center text-sm animate-color-change-phone'><img src="/callicon.png" alt="" className='h-4 mr-1 w-4' /><a href='tel:+919047366444' className='mr-1'>+91 9047366444 </a> | <a href='tel:+917604885943' className='ml-1'>+91 7604885943</a></p>
         </div>
 
         {/* Quote/Description */}
         <div className="text-center mt-4 px-4">
-          <p className="text-gray-200 text-[10px]">
-          Aviva Organics is your one-stop destination for fresh, natural products that celebrate health and sustainability. Offering a curated selection of organic foods, skincare, and wellness essentials, Aviva Organics ensures quality and purity in every item. Discover a vibrant community dedicated to holistic living and embrace a healthier lifestyle today!
+          <p className="text-white text-[12px]">
+          Victory Group of Institutions is a leading educational institution that offers a wide range of courses to help students achieve their academic and career goals. Our comprehensive curriculum, experienced faculty, and personalized approach ensure that students receive the best education and support to excel in their chosen field.
           </p>
         </div>
 

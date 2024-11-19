@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gradient-anim{
+    background: linear-gradient(150deg, #cfecfb, #d2f1ff, rgb(77, 188, 225), #06a4ed);
+    background-size: 200% 200%;
+    animation: gradient-animation 3s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes color-change {
+    0% {
+      color: #ffffff; /* Start color: white */
+    }
+    25% {
+      color: #ff0000; /* Red */
+    }
+    50% {
+      color: #055505; /* Green */
+    }
+    75% {
+      color: #0000ff; /* Blue */
+    }
+    100% {
+      color: #ffffff; /* End color: white */
+    }
+  }
+
+  @keyframes bg-color-change{
+    0% {
+      background-color: #ffffff; /* Start color: white */
+    }
+    25% {
+      background-color: #86b8dc; /* Red */
+    }
+    50% {
+      background-color: #0096FF; /* Green */
+      color: #ffffff; /* Start color: white */
+    }
+    75% {
+      background-color: #1a9bf6; /* Blue */
+      color: #ffffff; /* Start color: white */
+    }
+    100% {
+      background-color: #ffffff; /* End color: white */
+    }
+  }
+
+  .animate-color-change-phone {
+    animation: color-change 5s infinite;
+  }
+
+  .animate-color-change-cta {
+    animation: bg-color-change 5s infinite;
+  }
+
+  .animate-color-change-cta-rev{
+    animation: bg-color-change 5s infinite reverse;
+  }
