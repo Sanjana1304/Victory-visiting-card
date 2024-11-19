@@ -36,7 +36,6 @@ const MainLayout = () => {
         </div>
 
         {/* Profile Section */}
-       
         <div className="text-center mt-4 rounded-xl  py-4">
             <h2 className="text-2xl text-white  font-bold mt-2">VICTORY GROUP OF INSTITUTIONS</h2>
             <p className="text-[13px] text-gray-200">Beyond Boundaries! Discover Your Potential At Victory</p>
@@ -71,7 +70,7 @@ const MainLayout = () => {
           </a>
 
           <a
-            href="http://avivaorganics.in/"
+            href="http://vla.org.in/"
             target='_blank'
             className="animate-color-change-cta-rev flex items-center justify-center bg-gray-200 py-2 rounded-full hover:bg-gray-300 transition">
                 <div className='w-1/3 flex'>
@@ -81,7 +80,7 @@ const MainLayout = () => {
           </a>
 
           <a
-            href="mailto:avivaorganicstores@gmail.com"
+            href="mailto:victorygroupofinstitutions@gmail.com"
             className="animate-color-change-cta flex items-center justify-center bg-gray-200 py-2 rounded-full hover:bg-gray-300 transition">
             <div className='w-1/3 flex'>
                 <img src="/mail_icon.webp" className="w-6 h-6 mr-2" />
@@ -92,7 +91,7 @@ const MainLayout = () => {
 
         {/* Features */}
         <div id='features'>
-            <h1 className='text-xl font-semibold mt-8 text-white mb-4'>Features</h1>
+        <h1 className='flex text-xl md:text-4xl mt-7 mb-7 text-white justify-center font-bold'>Features</h1>
 
             <div className=''>
                 <div className="flex">
@@ -123,6 +122,54 @@ const MainLayout = () => {
             </div>
         </div>
 
+        {/*We Offer */}
+        <div id='offer'>
+            <h1 className='flex text-xl md:text-4xl mt-7 mb-7 text-white justify-center font-bold'>We Offer</h1>
+            
+            <div className="w-[90%] mx-auto">
+                <div className="flex gap-2">
+                    <div className='cursor-pointer relative flex  items-center h-64 justify-center rounded bg-gradient-to-b from-cyan-400 to-cyan-600 px-3 sm:w-[49%] mb-3 overflow-hidden group'>
+                        <h1 className='font-bold mt-2 text-2xl'>50+ Courses</h1>
+
+                        <div className="text-[12px] absolute p-2 inset-0 flex items-center justify-center bg-gradient-to-b from-cyan-500 to-purple-400 text-white font-medium opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                        We offer over 50 courses in a wide range of fields, including Computer Science, SAP, Tally, and Spoken Languages. Our diverse curriculum ensures comprehensive learning opportunities for students to excel in their chosen area of interest.
+                        </div>
+                    </div>
+
+                    <div className='cursor-pointer relative flex items-center h-64 justify-center rounded bg-gradient-to-b from-cyan-500 to-purple-400 px-3 sm:w-[49%] mb-3 overflow-hidden group'>
+                        
+                        <h1 className='font-bold mt-2 text-2xl'>College Admissions</h1>
+
+                        <div className="text-[12px] absolute p-2 inset-0 flex items-center justify-center bg-gradient-to-b from-cyan-400 to-cyan-600 text-white font-medium opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                        We provide personalized college admission guidance to help students navigate the application process, choose the right institutions, and maximize their chances of success. Our expert support ensures students make informed decisions for their higher education.
+                        </div>
+                    </div>
+                </div>
+                
+                <div className="flex gap-2">
+
+                    <div className='cursor-pointer relative flex items-center h-64 justify-center rounded bg-gradient-to-b from-cyan-400 to-cyan-600 px-3 sm:w-[49%] mb-3 overflow-hidden group'>
+                        
+                        <h1 className='font-bold mt-2 text-2xl'>Open Schooling</h1>
+
+                        <div className="text-[12px] absolute p-2 inset-0 flex items-center justify-center bg-gradient-to-b from-cyan-500 to-purple-400 text-white font-medium opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                        Whether you prefer self-paced study or guidance, we've got you covered. We assist you in applying to NIOS Boards, ensuring a seamless journey from admissions to examinations. With our guidance and access to the board's portals, you can confidently navigate the entire process.
+                        </div>
+                    </div>
+
+                    <div className='cursor-pointer relative flex items-center h-64 justify-center rounded bg-gradient-to-b from-cyan-500 to-purple-400 px-3 sm:w-[49%] mb-3 overflow-hidden group'>
+                        
+                        <h1 className='font-bold mt-2 text-2xl'>Job Bootcamps</h1>
+
+                        <div className="text-[12px] absolute p-2 inset-0 flex items-center justify-center bg-gradient-to-b from-cyan-400 to-cyan-600 text-white font-medium opacity-0 translate-y-full group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+                        We offer comprehensive job training, including interview preparation, valuable tips, and expert guidance. Our programs are designed to equip students with the skills and confidence needed to succeed in the competitive job market.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         
         {/* Address */}
         <div id='address'>
@@ -133,8 +180,8 @@ const MainLayout = () => {
         </div>
 
         <div className='flex text-[10px] justify-between text-white p-2'>
-          <a className='flex' href='mailto:avivaorganicstores@gmail.com'><img src="/mail_icon.png" className="w-4 h-4 mr-1" />avivaorganicstores@gmail.com</a>
-          <a className='flex' href='https://avivaorganics.in/'> <img src="/website_icon.png" className="w-4 h-4 mr-1" />avivaorganics.in</a>
+          <a className='flex' href='mailto:victorygroupofinstitutions@gmail.com'><img src="/mail_icon.webp" className="w-4 h-4 mr-1" />victorygroupofinstitutions@gmail.com</a>
+          <a className='flex' href='https://vla.org.in/'> <img src="/web_icon.png" className="w-4 h-4 mr-1" />vla.org.in</a>
         </div>
 
         
